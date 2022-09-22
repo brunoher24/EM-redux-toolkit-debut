@@ -12,6 +12,20 @@ code {
     monospace;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
 :root {
   --red: #E24D36;
   --orange: #F4A045;

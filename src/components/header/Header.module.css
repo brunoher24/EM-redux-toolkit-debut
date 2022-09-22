@@ -1,0 +1,39 @@
+.appHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: var(--craft-color);
+    color: white;
+  }
+  
+  .appHeader ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .appHeader li {
+    padding: 10px;
+  }
+  
+  .appHeader li:hover {
+    transition: background-color 400ms ease-in-out;
+    background-color: var(--black);
+  }
+
+.appHeader button {
+    color: white;
+    background-color: transparent;
+    font-size: 17px;
+    cursor: pointer;
+}
+  
+  .appHeader a {
+    color: white;
+  }
+  
+  .siteLogo {
+    width: 100px;
+    background-color: #e2d2c6;
+    border-radius: 50%;
+  }

@@ -1,5 +1,5 @@
 import styles from "./ProductDetails.module.css";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { productService } from "../../app/services/product";
 import { useDispatch } from "react-redux";
@@ -11,18 +11,19 @@ const ProductDetails = () => {
     const [quantity, setQuantity] = useState(1);
     let { id } = useParams();
     const dispatch = useDispatch();
-    
+    const navigate = useNavigate();
 
     useEffect(()=> {
         productService.fetchById(id).then(data => {
             setProduct(data);
         })
-    }, []);
+    }, [id]);
 
     const addToBasket = e => {
         e.preventDefault();
         const basketData = {id, quantity};
         dispatch(addItem(basketData));
+        navigate("/");
     }
 
     return (
