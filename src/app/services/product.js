@@ -3,14 +3,15 @@ import ProductList from "./productsList";
 export const productService = {
     fetchAll: () => (
       new Promise(resolve => {
-        setTimeout(() => {resolve(ProductList)}, 1000);
+        setTimeout(() => {resolve(ProductList)}, 300);
       }
     )),
     fetchById: id => (
       new Promise(resolve => {
+        id = parseInt(id);
         setTimeout(() => {
-          resolve(ProductList.find(product => product.id == id));
-        }, 1000);
+          resolve(ProductList.find(product => product.id === id));
+        }, 300);
       }
     )),
     fetchBasketItems: ids => (
@@ -25,7 +26,7 @@ export const productService = {
          Promise.all(promises).then(res => {
           resolve(res);
          });
-        }, 1000);
+        }, 300);
       })
     )
 };

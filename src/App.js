@@ -1,11 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 import { Routes, Route, NavLink } from 'react-router-dom';
 
 import Home from './pages/home/Home';
 import ProductDetails from './pages/productDetails/ProductDetails';
 import CardItems from './pages/cardItems/CardItems';
+import BasketNotif from './components/basketNotif/BasketNotif';
+
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
               <NavLink to="/">Accueil</NavLink>
             </li>
             <li>
-              <NavLink to="/mon-panier">Mon panier</NavLink>
+              <NavLink to="/mon-panier">
+                <BasketNotif/>
+              </NavLink>
             </li>
           </ul>
         </nav>

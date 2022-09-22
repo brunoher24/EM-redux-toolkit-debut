@@ -1,3 +1,45 @@
-.CardItemCtnr {
-    background-color: yellow;
+.CardItemCtnr h1 {
+    text-align: center;
+}
+
+.listItem {
+    position: relative;
+    margin: 35px 0 50px 0;
+}
+
+.subTotalCtnr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.subTotal {
+    background: white;
+    box-shadow: 1px 1px 4px silver;
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+    margin-right: 40px;
+}
+
+.removeBtn {
+    background-color: var(--red);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+}
+
+.totalAmount {
+    background-color: white;
+    box-shadow: 1px 1px 4px silver;
+    border-radius: 10px 0 10px 0;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
 }

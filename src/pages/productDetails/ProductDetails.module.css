@@ -1,3 +1,36 @@
-.ProductDetailsCtnr {
-    background-color: green;
+.addForm {
+    box-shadow: 1px 1px 3px silver;
+    border-radius: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.productImage {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.addForm input {
+    display: block;
+    font-size: 20px;
+    border: 1px solid var(--craft-color);
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 0 0;
+    margin: 10px auto;
+}
+
+input[type="submit"] {
+    border-color: transparent;
+    background-color: var(--craft-color);
+    cursor: pointer;
 }

@@ -1,0 +1,41 @@
+.basketNotifCtnr {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.shoppingBasketIcon {
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.notifCircleYellow {
+    background-color: var(--yellow);
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    color: var(--black);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -4px;
+    right: -12px;
+}
+
+.notifCircleGreen {
+    background-color: var(--green);
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -4px;
+    right: -12px;
+}

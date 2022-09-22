@@ -1,5 +1,11 @@
 .homeCtnr {
-    margin: 0
+    margin: 0;
+}
+
+.homeCtnr h1 {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
 .productsList {
